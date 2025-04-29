@@ -6,19 +6,67 @@
     align-items: flex-start;
   }
   .navbar {
-    width: 25%;
-    height: 100vh;
+    width: 300px;
+    height: 200vh;
     align-items: flex-start;
   }
   .navbar-brand {
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  .app-text {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logout-container {
+    margin-top: auto;
+    padding-bottom: 2rem;
+    width: 100%;
   }
 }
+
 .navbar .navbar-nav .nav-link {
   color: #fff;
   font-size: 1.1em;
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
 }
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
 .navbar-brand {
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.logout-btn {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Add some spacing between menu items */
+.navbar-nav .nav-item {
+  width: 100%;
+  margin-bottom: 0.5rem;
 }

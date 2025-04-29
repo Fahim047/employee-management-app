@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
 
+  logout() {
+    // Implement your logout logic here
+    console.log("Logging out...")
+    // Example: this.authService.logout();
+  }
+
 }
